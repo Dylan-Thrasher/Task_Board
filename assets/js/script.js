@@ -21,6 +21,11 @@ localStorage.setItem('tasks', JSON.stringify(taskArray));
 console.log(taskArray);
 
 $('#todo-cards').append(createTaskCard(taskObject));
+
+$('.draggable').draggable({
+    opacity: 0.7,
+    zIndex: 100,
+});
 }
 
 // Todo: create a function to generate a unique task id
@@ -77,6 +82,8 @@ if (!tasks) {
     tasks = [];
 }
 return tasks
+
+
 }
 
 // Todo: create a function to handle adding a new task
