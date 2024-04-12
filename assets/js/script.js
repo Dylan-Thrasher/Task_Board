@@ -23,8 +23,6 @@ console.log(taskArray);
 $('#todo-cards').append(createTaskCard(taskObject));
 
 $('.draggable').draggable({
-    opacity: 0.7,
-    zIndex: 100,
 });
 }
 
@@ -82,8 +80,6 @@ if (!tasks) {
     tasks = [];
 }
 return tasks
-
-
 }
 
 // Todo: create a function to handle adding a new task
